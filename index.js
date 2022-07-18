@@ -8,7 +8,7 @@ app.use(cors({
     origin:'*'
 }));  
 app.use(express.json());
-app.use('/', require('./routes/animes'));
+app.use('/api', require('./routes/animes'));
 
 app.listen(3000, ()=>{
     console.log("hola ");
